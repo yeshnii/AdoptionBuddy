@@ -49,7 +49,7 @@ An Example Pet with Embedded Qualities:
 ## Wireframes
 
 
-![adoptionbuddy wireframe](documentation/AdoptionBuddyWireframe.png)
+![adoptionbuddy wireframe](documentation/AdoptionBuddyWireframe.jpg)
 
 I did not end up implementing the first row second and third panels, nor the third panel in the second row, nor the panel in the third row due to time constraints. I removed the foster portion of the app, and made the adoption feature a button on the main page rather than 3 seperate pages. 
 
