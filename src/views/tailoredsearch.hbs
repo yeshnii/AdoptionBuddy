@@ -1,0 +1,31 @@
+<h2>Tailored Pet Search</h2>
+<div class="tailored"></div>
+<form method="POST" action="/tailored">
+    Looking for a specific animal?
+    <div><input type="text" name="animal" ></div>
+    Breed preference?
+    <div><input type="text" name="breed" ></div>
+    Gender preference?
+    <div><input type="text" name="gender" ></div>
+    <button class="submit-btn" type='submit'>Find me pets!</button>
+</form>
+
+{{!-- <table style="width:75%">
+    <tr>
+        <th>Name</th>
+        <th>Animal</th>
+        <th>Breed</th>
+        <th>Location</th>
+        <th>Image</th>
+    </tr>
+    {{#each pets}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{animal}}</td>
+        <td>{{breed}}</td>
+        <td>{{location}}</td>
+        <td><img src={{image}} alt="" style="max-width: 75px; border: 5px; inset black;"></td>
+    </tr>
+    {{/each}} --}}
+
+</table>

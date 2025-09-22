@@ -1,0 +1,36 @@
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title></title>
+	<link rel="stylesheet" href="css/base.css" type="text/css" charset="utf-8">
+</head>
+	<body>
+		<header>
+			<h1>AdoptionBuddy</h1>
+			<nav>
+				<ul>
+					<li><a href="/tailored" class="button">Tailored Pet Search</a></li>
+					<li><a href="/" class="button">Home</a></li>
+					<li><a href="/add" class="button">Add Pets</a></li>
+					<li><a href="/julie" class="button">AI Vet</a></li>
+					<li><a href="/mypets" class="button">My Pets</a></li>
+					<!-- Add more navigation links as needed -->
+				</ul>
+
+				<span class="login-status">
+				{{#if user}}
+				<!--<span class="success">Logged in as: {{user.username}}</span>-->
+				Logged in as: {{user.username}}
+				{{else}}
+				<a href="/register">Register</a> or <a href="/login">Login</a>
+				{{/if}}
+				</span>
+			</nav>
+		{{{ body }}}
+		</header>
+	</body>
+</html>

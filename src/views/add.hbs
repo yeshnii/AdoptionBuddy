@@ -1,0 +1,52 @@
+
+
+<h2>Add A Pet!</h2>
+<div class="add">
+    {{!-- <form method="POST" action="/add"> --}}
+    <form method="POST" action="/add" enctype="multipart/form-data">
+    <div><label for ="name">name:</label>
+    <input type ="text" id="name" name="name"></div>
+
+    <div><label for ="animal">animal:</label>
+    <input type ="text" id="animal" name="animal"></div>
+
+    <div><label for ="age">age:</label>
+    <input type ="number" id="age" name="age"></div>
+
+    <div><label for ="breed">breed:</label>
+    <input type ="text" id="breed" name="breed"></div>
+
+    <div><label for ="location">location:</label>
+    <input type ="text" id="location" name="location"></div>
+
+    <div><label for ="gender">gender:</label>
+    <input type ="text" id="gender" name="gender"></div>
+
+   <div><label for ="canFoster">Can foster?:</label>
+    <input type ="checkbox" id="canFoster" name="canFoster"></div>
+
+    {{!-- <div><label for ="image">image:</label>
+    <input type ="text" id="image" name="image"></div> --}}
+
+    <div>
+        <label>Upload a picture of them!</label>
+        <input type="file" id="image-file" name="image-file" accept=".png, .jpg, .jpeg, .gif" required/>
+    </div>
+
+    <input type="submit" value="submit">
+</form>
+
+{{!-- <h1>File Upload</h1>
+        <form id='form'>
+            Enter a picture of them!
+            <div class="input-group">
+                <label for='files'>Select files</label>
+                <input id='files' type="file" multiple>
+            </div>
+            <button class="submit-btn" type='submit'>Upload</button>
+        </form> --}}
+
+
+
+
+</div>

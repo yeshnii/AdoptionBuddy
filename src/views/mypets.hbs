@@ -1,0 +1,33 @@
+<h2>My Pets!</h2>
+<style>
+
+table, th, td {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+}
+</style>
+
+<h4>Hi {{username}}, these are your pets!</h4>
+
+<table style="width:75%">
+    <tr>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Animal</th>
+        <th>Breed</th>
+    </tr>
+    
+    {{#each pets}}
+
+    <tr>
+        <td>{{name}}</td>
+        <td><img src={{image}} alt="" style="max-width: 100px; border: 5px; inset black;"></td>
+        <td>{{animal}}</td>
+        <td>{{breed}}</td>
+    </tr>
+    {{/each}}
+    
+    
+
+</table>

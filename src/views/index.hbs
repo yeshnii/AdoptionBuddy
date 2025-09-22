@@ -1,0 +1,45 @@
+AdoptionBuddy Homepage
+<style>
+
+table, th, td {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+}
+</style>
+
+
+<table style="width:75%">
+    <tr>
+        <th>Name</th>
+        <th>Animal</th>
+        <th>Breed</th>
+        <th>Location</th>
+        <th>Image</th>
+        <th></th>
+    </tr>
+    
+    
+    {{#each pets}}
+    <form method="POST" action="/">
+    <tr>
+        <td>{{name}}</td>
+        <td>{{animal}}</td>
+        <td>{{breed}}</td>
+        <td>{{location}}</td>
+        <td><img src={{image}} alt="" style="max-width: 75px; border: 5px; inset black;"></td>
+        <td>
+            <input type="hidden" name="pet_name" value="{{name}}">
+            <input type="hidden" name="pet_animal" value="{{animal}}">
+            <input type="hidden" name="pet_breed" value="{{breed}}">
+            <input type="hidden" name="pet_location" value="{{location}}">
+            <input type="hidden" name="pet_image" value="{{image}}">
+            <input type="submit" value="Adopt me!" id="adopt-button">
+        </td>
+    </tr>
+    </form>
+    {{/each}}
+    
+    
+
+</table>
